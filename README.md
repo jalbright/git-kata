@@ -86,6 +86,6 @@ Merge the file into master
 
     git commit -a -m "Manual merge"
 
-These pages may be helpful:  http://www.gitguys.com/topics/git-and-remote-repositories/
+## 3. Working in a feature branch
 
-http://www.vogella.com/articles/Git/article.html
+This page may be helpful:  http://www.vogella.com/articles/Git/article.html
