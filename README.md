@@ -13,11 +13,15 @@ git-kata
     git commit -a -m "A change" # commit the change
     git push ../copy2.git # push the change to the remote
     git remote add origin ../copy2.git # associate copy2 with origin
-    touch file02
-    echo "Salutations" > file02 # make a new file with some text in it
-    git add file02
-    git commit -m "Test for origin" # commit the change
+    echo "Salutations" > file01
+    git commit -a -m "Test for origin" # commit the change
     git push origin # push the change to copy2
+    echo "Howdy" > file01
+    git commit -a -m "Howdy"
+    git push origin master # another way of pushing the change to copy2
+    echo "Hey" > file01
+    git commit -a -m "Hey commit"
+    git push origin master:master # yet another way to push
 These pages may be helpful:  http://www.gitguys.com/topics/git-and-remote-repositories/
 
 http://www.vogella.com/articles/Git/article.html
