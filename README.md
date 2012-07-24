@@ -46,7 +46,7 @@ Finally, we will add a new branch to our repository and its clone.
 
 We'll start by initializing a repository and making a commit.
 
-    mkdir conflicts # make a directory for the first repository
+    mkdir conflicts # make a directory for the repository
     cd conflicts # navigate into the directory
     touch file01 # make a file
     echo "Hello, World" > file01 # put some text into the file
@@ -87,5 +87,15 @@ Merge the file into master
     git commit -a -m "Manual merge"
 
 ## 3. Working in a feature branch
+
+We'll start by initializing a repository and making a commit.
+
+    mkdir official # make a directory for the first repository
+    cd official # navigate into the directory
+    touch file01 # make a file
+    echo "Hello" > file01 # put some text into the file
+    git init # initialize the repository
+    git add . # add all files and directories to the repository
+    git commit -m "Initial commit" # make your first commit
 
 This page may be helpful:  http://www.vogella.com/articles/Git/article.html
