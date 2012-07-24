@@ -53,7 +53,16 @@ We'll start by initializing a repository and making a commit.
     git init # initialize the repository
     git add . # add all files and directories to the repository
     git commit -m "Initial commit" # make your first commit
-    
+
+Add a branch and make different changes in master and the branch
+
+    git branch branch1 # make a new branch
+    echo "Greetings, World" > file01 # change the first word in master
+    git commit -a -m "Change1" # commit the change
+    git checkout branch1 # switch to the branch
+    echo "Hello, Earth" > file01 # change the second word
+    git commit -a -m "Change2" # commit the change
+
 These pages may be helpful:  http://www.gitguys.com/topics/git-and-remote-repositories/
 
 http://www.vogella.com/articles/Git/article.html
