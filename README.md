@@ -1,7 +1,7 @@
 git-kata
 ========
 
-Working with a remote repository
+## 1. Working with a remote repository
 
     mkdir copy1 # make a directory for the first repository
     cd copy1 # navigate into the directory
