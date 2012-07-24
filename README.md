@@ -1,6 +1,8 @@
 git-kata
 ========
 
+The purpose of this project is to provide a practice kata for several useful git functionalities.
+
 ## 1. Working with a remote repository
 
 We'll start by initializing a repository and making a commit.
@@ -39,6 +41,17 @@ Finally, we will add a new branch to our repository and its clone.
     git commit -a -m "Commit for new branch"
     git push origin master:new-branch # push to a new branch on copy2
     git push origin :newbranch # delete the new branch
+    
+We'll start by initializing a repository and making a commit.
+
+    mkdir conflicts # make a directory for the first repository
+    cd conflicts # navigate into the directory
+    touch file01 # make a file
+    echo "Hello, World" > file01 # put some text into the file
+    git init # initialize the repository
+    git add . # add all files and directories to the repository
+    git commit -m "Initial commit" # make your first commit
+    
 These pages may be helpful:  http://www.gitguys.com/topics/git-and-remote-repositories/
 
 http://www.vogella.com/articles/Git/article.html
