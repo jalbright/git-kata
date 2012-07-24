@@ -100,9 +100,13 @@ We'll start by initializing a repository and making a commit.
 
 Clone the repository
 
-    cd ../
-    mkdir my-fork
-    cd my-fork/
-    git clone ../official
+    mkdir ../my-fork
+    git clone . ../my-fork
+
+Clone the repository again
+
+    cd ../my-fork
+    mkdir ../on-my-machine
+    git clone . ../on-my-machine
 
 This page may be helpful:  http://www.vogella.com/articles/Git/article.html
