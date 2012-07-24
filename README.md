@@ -98,4 +98,11 @@ We'll start by initializing a repository and making a commit.
     git add . # add all files and directories to the repository
     git commit -m "Initial commit" # make your first commit
 
+Clone the repository
+
+    cd ../
+    mkdir my-fork
+    cd my-fork/
+    git clone ../official
+
 This page may be helpful:  http://www.vogella.com/articles/Git/article.html
