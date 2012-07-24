@@ -63,6 +63,29 @@ Add a branch and make different changes in master and the branch
     vim file01 # Substitute vim for your favorite text editor, and change "Hello, World" to "Hello, Earth"
     git commit -a -m "Change2" # commit the change
 
+Try to merge branch1 into master
+
+    git checkout master # switch to master
+    git merge branch1
+
+The auto merge will fail, so file01 will have to be edited manually
+
+    vim file01 # substitute vim for your favorite text editor
+
+The file will look like this:
+
+    <<<<<<< HEAD
+    Greetings, World
+    =======
+    Hello, Earth
+    >>>>>>> branch1
+
+Edit the file so it says "Greetings, Earth".
+
+Merge the file into master
+
+    git commit -a -m "Manual merge"
+
 These pages may be helpful:  http://www.gitguys.com/topics/git-and-remote-repositories/
 
 http://www.vogella.com/articles/Git/article.html
