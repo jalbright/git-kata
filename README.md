@@ -15,4 +15,6 @@ git add . # add all files and directories to the repository
 
 git commit -m "Initial commit" # make your first commit
 
-This page may be helpful:  http://www.gitguys.com/topics/git-and-remote-repositories/
+These pages may be helpful:  http://www.gitguys.com/topics/git-and-remote-repositories/
+
+http://www.vogella.com/articles/Git/article.html
