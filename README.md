@@ -9,7 +9,7 @@ touch file01 # make a file
 
 echo "Hello" > file01 # put some text into the file
 
-git init copy1 # initialize the repository
+git init # initialize the repository
 
 git add . # add all files and directories to the repository
 
