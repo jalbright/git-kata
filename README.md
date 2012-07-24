@@ -88,6 +88,9 @@ Merge the file into master
 
 ## 3. Working in a feature branch
 
+We are going to model a setup where there is an official repository on github, from which you have your own fork,
+with a clone of your fork on your local machine.
+
 We'll start by initializing a repository and making a commit.
 
     mkdir official # make a directory for the first repository
