@@ -3,6 +3,8 @@ git-kata
 
 ## 1. Working with a remote repository
 
+We'll start by initializing a repository and making a commit.
+
     mkdir copy1 # make a directory for the first repository
     cd copy1 # navigate into the directory
     touch file01 # make a file
@@ -10,10 +12,16 @@ git-kata
     git init # initialize the repository
     git add . # add all files and directories to the repository
     git commit -m "Initial commit" # make your first commit
+
+Now we will clone the repository.
+
     git clone --bare . ../copy2.git # clone copy1 into the remote repository copy2
     echo "Greetings" > file01 # make a change to the file
     git commit -a -m "A change" # commit the change
     git push ../copy2.git # push the change to the remote
+
+There are several ways to push changes to the clone.
+
     git remote add origin ../copy2.git # associate copy2 with origin
     echo "Salutations" > file01
     git commit -a -m "Test for origin" # commit the change
@@ -24,6 +32,9 @@ git-kata
     echo "Hey" > file01
     git commit -a -m "Hey commit"
     git push origin master:master # yet another way to push
+
+Finally, we will add a new branch to our repository and its clone.
+
     echo "We will make a new branch" > file01
     git commit -a -m "Commit for new branch"
     git push origin master:new-branch # push to a new branch on copy2
