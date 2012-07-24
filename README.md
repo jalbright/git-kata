@@ -22,6 +22,10 @@ git-kata
     echo "Hey" > file01
     git commit -a -m "Hey commit"
     git push origin master:master # yet another way to push
+    echo "We will make a new branch" > file01
+    git commit -a -m "Commit for new branch"
+    git push origin master:new-branch # push to a new branch on copy2
+    git push origin :newbranch # delete the new branch
 These pages may be helpful:  http://www.gitguys.com/topics/git-and-remote-repositories/
 
 http://www.vogella.com/articles/Git/article.html
