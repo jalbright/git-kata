@@ -111,5 +111,28 @@ Clone the repository again
     cd ../my-fork
     mkdir ../on-my-machine
     git clone . ../on-my-machine
+    cd ../on-my-machine
+    git remote add upstream ../official # set the upstream for on-my-machine
+
+Now we have our 3 repos set up.  Imagine we are about to work on on-my-machine, and want to make sure it is up to date
+with my-fork.  We can do a pull in order to get our master up to date, then start work on a branch.
+
+    git pull --rebase
+    git checkout -b feature1 # make and switch to a new branch
+    echo "An update" > file01
+    git commit -a -m "Update on new branch"
+
+Imagine we are coming back later and want to make sure our branch hasn't fallen behind.
+
+    git fetch upstream
+    git rebase upstream/master # pulls any new commits from upstream and then rebases our work on top of them
+    echo "Another update" > file01
+    git commit -a -m "Update again"
+
+Now we can push our work to github.
+
+    git push origin feature1 # creates the branch on github (my-fork) and pushes our branch to it
+
+The final step would be to create a pull request on github for branch feature1
 
 This page may be helpful:  http://www.vogella.com/articles/Git/article.html
