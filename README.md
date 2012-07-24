@@ -60,7 +60,7 @@ Add a branch and make different changes in master and the branch
     echo "Greetings, World" > file01 # change the first word in master
     git commit -a -m "Change1" # commit the change
     git checkout branch1 # switch to the branch
-    echo "Hello, Earth" > file01 # change the second word
+    vim file01 # Substitute vim for your favorite text editor, and change "Hello, World" to "Hello, Earth"
     git commit -a -m "Change2" # commit the change
 
 These pages may be helpful:  http://www.gitguys.com/topics/git-and-remote-repositories/
