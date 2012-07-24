@@ -41,7 +41,9 @@ Finally, we will add a new branch to our repository and its clone.
     git commit -a -m "Commit for new branch"
     git push origin master:new-branch # push to a new branch on copy2
     git push origin :newbranch # delete the new branch
-    
+
+## 2. Resolving conflicts
+
 We'll start by initializing a repository and making a commit.
 
     mkdir conflicts # make a directory for the first repository
