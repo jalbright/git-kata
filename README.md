@@ -40,7 +40,7 @@ Finally, we will add a new branch to our repository and its clone.
     echo "We will make a new branch" > file01
     git commit -a -m "Commit for new branch"
     git push origin master:new-branch # push to a new branch on copy2
-    git push origin :newbranch # delete the new branch
+    git push origin :new-branch # delete the new branch
 
 ## 2. Resolving conflicts
 
