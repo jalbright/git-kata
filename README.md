@@ -29,10 +29,10 @@ There are several ways to push changes to the clone.
     git commit -a -m "Test for origin" # commit the change
     git push origin # push the change to copy2
     echo "Howdy" > file01
-    git commit -a -m "Howdy"
+    git commit -a -m "Another commit"
     git push origin master # another way of pushing the change to copy2
     echo "Hey" > file01
-    git commit -a -m "Hey commit"
+    git commit -a -m "Yet another commit"
     git push origin master:master # yet another way to push
 
 Finally, we will add a new branch to our repository and its clone.
