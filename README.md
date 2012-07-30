@@ -135,4 +135,4 @@ Now we can push our work to github.
 
 The final step would be to create a pull request on github for branch feature1
 
-This page may be helpful:  http://www.vogella.com/articles/Git/article.html
+This page was helpful to me while creating this kata:  http://www.vogella.com/articles/Git/article.html
